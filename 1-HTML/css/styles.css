@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    width: 100%;
+}
+
+body {
+    min-width: 345px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* CABECERA */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(179, 5, 5);
+    color: white;
+}
+
+header h1 {
+    margin: 1rem 0;
+}
+
+nav {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, white, rgb(179, 5, 5));
+}
+
+menu li {
+    font-size: 0.8rem;
+    list-style-type: none;
+}
+
+menu li:hover {
+    background-image: linear-gradient(to bottom, rgb(179, 5, 5), white);
+}
+
+li a {
+    height: 30px;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/* MAIN */
+
+hr {
+    margin: 1rem auto;
+}
+
+section h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+
+/* peliculas */
+
+#pelis,
+#viaje {
+    margin: 0 20px;
+}
+
+#pelis ol {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(5, 1rem);
+    column-gap: 20px;
+    font-size: 0.9rem;
+    margin: 0 10%;
+}
+
+
+/* SECCION VIAJE */
+
+#viaje figure {
+    width: 150px;
+    float: left;
+    margin-right: 1rem;
+}
+
+#viaje figure>img {
+    border-radius: 8px;
+}
+
+
+/* SECCION FORMULARIO */
+
+#formulario {
+    margin: 0;
+    background-color: rgb(179, 5, 5);
+    color: white;
+    font-size: 0.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.6rem;
+}
+
+input {
+    margin: 0.3rem;
+}
+
+form h2 {
+    text-shadow: 1px 2px 1px black;
+}
+
+input[type="text"],
+input[type="email"] {
+    min-width: auto;
+    box-shadow: 1px 1px 1px black;
+    border: none;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#fNacimiento {
+    text-align: center;
+}
+
+form label {
+    display: inline-block;
+    min-width: 7rem;
+    padding-right: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+form label[for="comentarios"] {
+    padding-bottom: 0.5rem;
+}
+
+form textarea {
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    width: 90%;
+    font-size: 0.8rem;
+}
+
+#bloque3 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#newsletter {
+    margin: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#newsletter input[type="checkbox"] {
+    border: none;
+    box-shadow: 1px 1px 0px black;
+}
+
+form button {
+    width: 4rem;
+    height: 1.5rem;
+    color: rgba(179, 5, 5);
+    font-weight: bolder;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    margin: 0.5rem 2rem;
+}
+
+
+/* SECCION INSIDE */
+
+aside {
+    width: 40%;
+    margin: 1rem auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside figure img {
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+aside h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+aside p {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+aside a {
+    color: cadetblue;
+    font-size: 0.7rem;
+    margin: 1rem 0;
+}
+
+aside a:visited {
+    color: cadetblue;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(90, 90, 90);
+    font-size: 0.6rem;
+    color: white;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a,
+footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(min-width:767px) {
+    html {
+        font-size: 18px;
+        /* width: 100vw; */
+    }
+    body {
+        max-width: 900px;
+    }
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    header h1 {
+        margin: 1.5rem 0;
+    }
+    menu li {
+        font-size: 1rem;
+    }
+    li a {
+        height: 2rem;
+        width: 10rem;
+    }
+    /* MAIN */
+    hr {
+        margin: 2rem auto;
+    }
+    #pelis ol {
+        margin: 0 0;
+        justify-content: end;
+    }
+    main {
+        display: grid;
+        grid-template: 'pelis aside' auto 'viaje aside' auto 'form form' auto / 3fr 1fr;
+    }
+    #pelis {
+        grid-area: pelis;
+    }
+    #viaje {
+        grid-area: viaje;
+    }
+    #aside {
+        grid-area: aside;
+    }
+    #formulario {
+        grid-area: form;
+    }
+    #pelis,
+    #viaje {
+        margin: 0 10% 0 5%;
+    }
+    /* SECCION VIAJE */
+    #viaje figure {
+        width: 300px;
+    }
+    /* ASIDE */
+    aside {
+        margin: 3rem auto;
+        width: 70%;
+        height: fit-content;
+        margin-right: 4rem;
+    }
+    /* SECCION FORMULARIO */
+    #formulario {
+        font-size: 1rem;
+    }
+    form {
+        display: flex;
+        padding: 1rem 6rem;
+    }
+    #bloque1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #bloque2 {
+        display: flex;
+        flex-direction: column;
+    }
+    #bloque3 {
+        display: flex;
+        justify-content: center;
+    }
+    form label {
+        text-align: left;
+        min-width: auto;
+        font-size: 0.8rem;
+    }
+    form label[for="comentarios"] {
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+    form textarea {
+        width: 100%;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <!-- Descomentar la siguiente línea ⬇ para aplicar estilos CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="inicio">Takeshi Kitano</h1>
+        <nav>
+            <menu>
+                <li><a href="#inicio">Mi TOP 10 películas</a></li>
+                <li><a href="#viaje">Mi viaje a Japón</a> </li>
+                <li><a href="#formulario">Mándame un mensaje</a> </li>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <section id="pelis">
+            <hr />
+            <h2>MI TOP 10 PELÍCULAS</h2>
+            <ol>
+                <li>Battle Royale</li>
+                <li>La lista de Schindler</li>
+                <li>El padrino. Parte II</li>
+                <li>Cadena perpetua</li>
+                <li>Pulp Fiction</li>
+                <li>El Rey León</li>
+                <li>Forrest Gump</li>
+                <li>La vida es bella</li>
+                <li>Gladiator</li>
+                <li>Coco</li>
+            </ol>
+        </section>
+        <section id="viaje">
+            <hr />
+            <h2>MI VIAJE A JAPÓN</h2>
+            <div>
+                <figure><img src="./img/japan.jpg" alt="Foto Japón" /></figure>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere qui, laborum dignissimos dolorum et ipsum fugiat? Nisi soluta minus amet doloribus. Porro molestias perferendis deserunt. Quasi suscipit harum rerum earum quo magnam, corporis consectetur
+                    repellendus unde molestiae obcaecati, nesciunt quam deserunt id eius sed facere hic mollitia voluptas saepe praesentium dignissimos veritatis ex fugit? Delectus tempora obcaecati recusandae. Veritatis architecto sapiente quis praesentium
+                    consectetur labore quam, aliquid quod porro excepturi fugiat odio fuga magnam officia pariatur aperiam deserunt maxime saepe ea culpa consequuntur qui! Sed aspernatur dolore nobis saepe iure aut fugiat eius distinctio. Doloremque magnam
+                    possimus modi deleniti?
+                </p>
+
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus est itaque neque autem temporibus voluptates qui officiis harum sunt magni, aut eveniet aspernatur fugiat distinctio iure eius quis amet quidem! Voluptates atque aliquid ea quasi quis cumque
+                    iusto quam labore magnam? Facere culpa adipisci necessitatibus dicta, debitis ratione iste eos?
+                </p>
+            </div>
+        </section>
+        <section id="formulario">
+            <form action="#">
+                <h2>MÁNDAME UN MENSAJE</h2>
+                <div id="bloque1">
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+                    <div><label for="fNacimiento">Fecha de nacimiento:</label>
+                        <input type="text" name="fNacimiento" id="fNacimiento" required placeholder="DD/MM/AA">
+                    </div>
+                </div>
+                <div id="bloque2">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escribe aquí todo lo que quieras..."></textarea>
+                </div>
+                <div id="bloque3">
+                    <div id="newsletter">
+                        <input type="checkbox" name="subscribe" id="subscribe" />
+                        <label for="subscribe">Suscribirse a newsletter</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <aside id="aside">
+            <figure>
+                <img src="./img/foto_perfil.jpg" alt="Foto Takeshi Kitano" />
+            </figure>
+            <h3>Takeshi Kitano</h3>
+            <p>Aquí escribo lo que se me ocurre.</p>
+            <a href="mailto:takeshi.kitano@example.com">takeshi.kitano@example.com</a>
+        </aside>
+    </main>
+    <footer> <a href="#">Términos y condiciones</a> | <a href="">Política de privacidad</a></footer>
+</body>
+
+</html>
